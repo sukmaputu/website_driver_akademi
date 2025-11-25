@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Driver Akademi</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <script>
+      tailwind.config = {
+        darkMode: 'class', // Pastikan ini ada!
+        theme: {
+          extend: {
+            colors: {
+              neonGreen: '#00FF6A',
+              neonRed: '#FF1744',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      :root.theme-transition,
+      :root.theme-transition * {
+        transition: background-color 0.45s ease, color 0.45s ease, border-color 0.45s ease;
+      }
+    </style>
     
-    <script type="module" crossorigin src="/website_driver_akademi/assets/index-BbuEv9_Z.js"></script>
-    <link rel="stylesheet" crossorigin href="/website_driver_akademi/assets/index-tn0RQdqM.css">
+    <script type="module" crossorigin src="/website_driver_akademi/assets/index-DWLJawJf.js"></script>
+    <link rel="stylesheet" crossorigin href="/website_driver_akademi/assets/index-Cm-MIi5B.css">
   </head>
-  <body>
+  <body class="dark:bg-black">
     <div id="app"></div>
   </body>
 </html>
